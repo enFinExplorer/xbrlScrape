@@ -1,0 +1,705 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<!--XBRL document created with Toppan Merrill Bridge  9.5.7293.39921 -->
+<!--Based on XBRL 2.1-->
+<!--Created on: 2/27/2020 10:09:56 PM-->
+<!--Modified on: 2/27/2020 10:09:56 PM-->
+<xsd:schema xmlns:xl="http://www.xbrl.org/2003/XLink" xmlns:country="http://xbrl.sec.gov/country/2017-01-31" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:num="http://www.xbrl.org/dtr/type/numeric" xmlns:attributeFormDefault="unqualified" xmlns:nonnum="http://www.xbrl.org/dtr/type/non-numeric" xmlns:wll="http://www.whiting.com/20191231" xmlns:ref="http://www.xbrl.org/2006/ref" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:invest="http://xbrl.sec.gov/invest/2013-01-31" targetNamespace="http://www.whiting.com/20191231" attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:us-gaap="http://fasb.org/us-gaap/2019-01-31" xmlns:us-types="http://fasb.org/us-types/2019-01-31" xmlns:dei="http://xbrl.sec.gov/dei/2019-01-31" xmlns:stpr="http://xbrl.sec.gov/stpr/2018-01-31" xmlns:us-roles="http://fasb.org/us-roles/2019-01-31" xmlns:negated="http://www.xbrl.org/2009/role/negated" xmlns:srt-types="http://fasb.org/srt-types/2019-01-31">
+  <xsd:annotation>
+    <xsd:appinfo>
+      <link:roleType roleURI="http://www.whiting.com/role/StatementConsolidatedBalanceSheets" id="StatementConsolidatedBalanceSheets">
+        <link:definition>00100 - Statement - CONSOLIDATED BALANCE SHEETS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.whiting.com/role/StatementConsolidatedStatementsOfOperations" id="StatementConsolidatedStatementsOfOperations">
+        <link:definition>00200 - Statement - CONSOLIDATED STATEMENTS OF OPERATIONS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.whiting.com/role/StatementConsolidatedStatementsOfCashFlows" id="StatementConsolidatedStatementsOfCashFlows">
+        <link:definition>00300 - Statement - CONSOLIDATED STATEMENTS OF CASH FLOWS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.whiting.com/role/DisclosureOilAndGasPropertiesDetails" id="DisclosureOilAndGasPropertiesDetails">
+        <link:definition>40201 - Disclosure - OIL AND GAS PROPERTIES (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.whiting.com/role/DisclosureAcquisitionsAndDivestituresAcquisitionDetails" id="DisclosureAcquisitionsAndDivestituresAcquisitionDetails">
+        <link:definition>40301 - Disclosure - ACQUISITIONS AND DIVESTITURES (Acquisition) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.whiting.com/role/DisclosureLeasesBalanceSheetAndTermsDetails" id="DisclosureLeasesBalanceSheetAndTermsDetails">
+        <link:definition>40402 - Disclosure - LEASES (Balance Sheet and Terms) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.whiting.com/role/DisclosureLeasesLeaseCostDetails" id="DisclosureLeasesLeaseCostDetails">
+        <link:definition>40403 - Disclosure - LEASES (Lease cost) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.whiting.com/role/DisclosureLeasesObligationsDetails" id="DisclosureLeasesObligationsDetails">
+        <link:definition>40405 - Disclosure - LEASES (Obligations) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.whiting.com/role/DisclosureLeasesAsc840ObligationsDetails" id="DisclosureLeasesAsc840ObligationsDetails">
+        <link:definition>40406 - Disclosure - LEASES (ASC 840 Obligations) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.whiting.com/role/DisclosureLeasesObligationsCalc2Details" id="DisclosureLeasesObligationsCalc2Details">
+        <link:definition>40415 - Disclosure - LEASES (Obligations) (Calc2) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.whiting.com/role/DisclosureLongTermDebtScheduleOfLongTermDebtDetails" id="DisclosureLongTermDebtScheduleOfLongTermDebtDetails">
+        <link:definition>40501 - Disclosure - LONG-TERM DEBT (Schedule of long-term debt) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.whiting.com/role/DisclosureLongTermDebtScheduleOfLongTermDebtDetailsAlternate" id="DisclosureLongTermDebtScheduleOfLongTermDebtDetailsAlternate">
+        <link:definition>40505 - Disclosure - LONG-TERM DEBT (Schedule of long-term debt) (Details) (Alternate)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.whiting.com/role/DisclosureLongTermDebtScheduleOfConvertibleSeniorNotesDetails" id="DisclosureLongTermDebtScheduleOfConvertibleSeniorNotesDetails">
+        <link:definition>40507 - Disclosure - LONG-TERM DEBT (Schedule of convertible senior notes) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.whiting.com/role/DisclosureDerivativeFinancialInstrumentsLocationAndFairValueOfAssetDerivativesDetails" id="DisclosureDerivativeFinancialInstrumentsLocationAndFairValueOfAssetDerivativesDetails">
+        <link:definition>40704 - Disclosure - DERIVATIVE FINANCIAL INSTRUMENTS (Location and fair value of asset derivatives) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.whiting.com/role/DisclosureDerivativeFinancialInstrumentsLocationAndFairValueOfLiabilityDerivativesDetails" id="DisclosureDerivativeFinancialInstrumentsLocationAndFairValueOfLiabilityDerivativesDetails">
+        <link:definition>40705 - Disclosure - DERIVATIVE FINANCIAL INSTRUMENTS (Location and fair value of liability derivatives) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.whiting.com/role/DisclosureFairValueMeasurementsFairValueAssetsAndLiabilitiesMeasuredOnRecurringBasisDetails" id="DisclosureFairValueMeasurementsFairValueAssetsAndLiabilitiesMeasuredOnRecurringBasisDetails">
+        <link:definition>40802 - Disclosure - FAIR VALUE MEASUREMENTS (Fair value assets and liabilities measured on a recurring basis) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.whiting.com/role/DisclosureIncomeTaxesScheduleOfIncomeExpenseDetails" id="DisclosureIncomeTaxesScheduleOfIncomeExpenseDetails">
+        <link:definition>41201 - Disclosure - INCOME TAXES (Schedule of income expense) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.whiting.com/role/DisclosureIncomeTaxesReconciliationOfStatutoryIncomeTaxExpenseToIncomeExpenseDetails" id="DisclosureIncomeTaxesReconciliationOfStatutoryIncomeTaxExpenseToIncomeExpenseDetails">
+        <link:definition>41202 - Disclosure - INCOME TAXES (Reconciliation of statutory income tax expense to income expense) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.whiting.com/role/DisclosureIncomeTaxesComponentsOfDeferredIncomeTaxAssetsAndLiabilitiesDetails" id="DisclosureIncomeTaxesComponentsOfDeferredIncomeTaxAssetsAndLiabilitiesDetails">
+        <link:definition>41203 - Disclosure - INCOME TAXES (Components of deferred income tax assets and liabilities) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.whiting.com/role/DisclosureEarningsPerShareReconciliationDetails" id="DisclosureEarningsPerShareReconciliationDetails">
+        <link:definition>41301 - Disclosure - EARNINGS PER SHARE (Reconciliation) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.whiting.com/role/StatementConsolidatedStatementsOfCashFlowsParenthetical" id="StatementConsolidatedStatementsOfCashFlowsParenthetical">
+        <link:definition>00305 - Statement - CONSOLIDATED STATEMENTS OF CASH FLOWS (Parenthetical)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.whiting.com/role/StatementConsolidatedStatementsOfEquity" id="StatementConsolidatedStatementsOfEquity">
+        <link:definition>00400 - Statement - CONSOLIDATED STATEMENTS OF EQUITY</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.whiting.com/role/DisclosureDerivativeFinancialInstrumentsTables" id="DisclosureDerivativeFinancialInstrumentsTables">
+        <link:definition>30703 - Disclosure - DERIVATIVE FINANCIAL INSTRUMENTS (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.whiting.com/role/DisclosureSummaryOfSignificantAccountingPoliciesNarrativeIDetails" id="DisclosureSummaryOfSignificantAccountingPoliciesNarrativeIDetails">
+        <link:definition>40101 - Disclosure - SUMMARY OF SIGNIFICANT ACCOUNTING POLICIES (Narrative I) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.whiting.com/role/DisclosureSummaryOfSignificantAccountingPoliciesNarrativeIiDetails" id="DisclosureSummaryOfSignificantAccountingPoliciesNarrativeIiDetails">
+        <link:definition>40102 - Disclosure - SUMMARY OF SIGNIFICANT ACCOUNTING POLICIES (Narrative II) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.whiting.com/role/DisclosureSummaryOfSignificantAccountingPoliciesCreditRiskDetails" id="DisclosureSummaryOfSignificantAccountingPoliciesCreditRiskDetails">
+        <link:definition>40103 - Disclosure - SUMMARY OF SIGNIFICANT ACCOUNTING POLICIES (Credit risk) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.whiting.com/role/DisclosureAcquisitionsAndDivestituresDivestituresDetails" id="DisclosureAcquisitionsAndDivestituresDivestituresDetails">
+        <link:definition>40302 - Disclosure - ACQUISITIONS AND DIVESTITURES (Divestitures) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.whiting.com/role/DisclosureLeasesDetails" id="DisclosureLeasesDetails">
+        <link:definition>40401 - Disclosure - LEASES (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.whiting.com/role/DisclosureLongTermDebtCreditAgreementDetails" id="DisclosureLongTermDebtCreditAgreementDetails">
+        <link:definition>40503 - Disclosure - LONG-TERM DEBT (Credit agreement) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.whiting.com/role/DisclosureLongTermDebtSummaryOfSeniorNotesAndConvertibleSeniorNotesDetails" id="DisclosureLongTermDebtSummaryOfSeniorNotesAndConvertibleSeniorNotesDetails">
+        <link:definition>40504 - Disclosure - LONG-TERM DEBT (Summary of senior notes and convertible senior notes) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.whiting.com/role/DisclosureLongTermDebtSeniorNotesDetails" id="DisclosureLongTermDebtSeniorNotesDetails">
+        <link:definition>40505 - Disclosure - LONG-TERM DEBT (Senior notes) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.whiting.com/role/DisclosureLongTermDebt2020ConvertibleSeniorNotesDetails" id="DisclosureLongTermDebt2020ConvertibleSeniorNotesDetails">
+        <link:definition>40506 - Disclosure - LONG-TERM DEBT (2020 Convertible senior notes) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.whiting.com/role/DisclosureDerivativeFinancialInstrumentsDerivativeInstrumentsDetails" id="DisclosureDerivativeFinancialInstrumentsDerivativeInstrumentsDetails">
+        <link:definition>40701 - Disclosure - DERIVATIVE FINANCIAL INSTRUMENTS (Derivative instruments) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.whiting.com/role/DisclosureDerivativeFinancialInstrumentsNarrativeDetails" id="DisclosureDerivativeFinancialInstrumentsNarrativeDetails">
+        <link:definition>40702 - Disclosure - DERIVATIVE FINANCIAL INSTRUMENTS (Narrative) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.whiting.com/role/DisclosureDerivativeFinancialInstrumentsEffectsOfCommodityDerivativeInstrumentsDetails" id="DisclosureDerivativeFinancialInstrumentsEffectsOfCommodityDerivativeInstrumentsDetails">
+        <link:definition>40703 - Disclosure - DERIVATIVE FINANCIAL INSTRUMENTS (Effects of commodity derivative instruments) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.whiting.com/role/DisclosureFairValueMeasurementsSummaryOfFairValuesAndCarryingValueOfDebtInstrumentsDetails" id="DisclosureFairValueMeasurementsSummaryOfFairValuesAndCarryingValueOfDebtInstrumentsDetails">
+        <link:definition>40801 - Disclosure - FAIR VALUE MEASUREMENTS (Summary of the Fair values and carrying value of debt instruments) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.whiting.com/role/DisclosureFairValueMeasurementsNarrativeDetails" id="DisclosureFairValueMeasurementsNarrativeDetails">
+        <link:definition>40803 - Disclosure - FAIR VALUE MEASUREMENTS (Narrative) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.whiting.com/role/DisclosureFairValueMeasurementsReconciliationLevel3Details" id="DisclosureFairValueMeasurementsReconciliationLevel3Details">
+        <link:definition>40804 - Disclosure - FAIR VALUE MEASUREMENTS (Reconciliation-Level 3) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.whiting.com/role/DisclosureFairValueMeasurementsNonFinancialAssetsAndLiabilitiesMeasuredAtFairValueOnNonrecurringBasisDetails" id="DisclosureFairValueMeasurementsNonFinancialAssetsAndLiabilitiesMeasuredAtFairValueOnNonrecurringBasisDetails">
+        <link:definition>40805 - Disclosure - FAIR VALUE MEASUREMENTS (Non-financial assets and liabilities measured at fair value on a nonrecurring basis) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.whiting.com/role/DisclosureShareholdersEquityAndNoncontrollingInterestNarrativeDetails" id="DisclosureShareholdersEquityAndNoncontrollingInterestNarrativeDetails">
+        <link:definition>40901 - Disclosure - SHAREHOLDERS' EQUITY AND NONCONTROLLING INTEREST (Narrative) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.whiting.com/role/DisclosureShareholdersEquityAndNoncontrollingInterestScheduleOfNoncontrollingInterestDetails" id="DisclosureShareholdersEquityAndNoncontrollingInterestScheduleOfNoncontrollingInterestDetails">
+        <link:definition>40902 - Disclosure - SHAREHOLDERS' EQUITY AND NONCONTROLLING INTEREST (Schedule of noncontrolling interest) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.whiting.com/role/DisclosureRevenueRecognitionRevenueReclassificationDetails" id="DisclosureRevenueRecognitionRevenueReclassificationDetails">
+        <link:definition>41001 - Disclosure - REVENUE RECOGNITION (Revenue Reclassification) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.whiting.com/role/DisclosureRevenueRecognitionNarrativeDetails" id="DisclosureRevenueRecognitionNarrativeDetails">
+        <link:definition>41002 - Disclosure - REVENUE RECOGNITION (Narrative) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.whiting.com/role/DisclosureStockBasedCompensationNarrativeDetails" id="DisclosureStockBasedCompensationNarrativeDetails">
+        <link:definition>41101 - Disclosure - STOCK-BASED COMPENSATION (Narrative) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.whiting.com/role/DisclosureStockBasedCompensationAssumptionsDetails" id="DisclosureStockBasedCompensationAssumptionsDetails">
+        <link:definition>41102 - Disclosure - STOCK-BASED COMPENSATION (Assumptions) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.whiting.com/role/DisclosureStockBasedCompensationSummaryOfNonvestedAwardsDetails" id="DisclosureStockBasedCompensationSummaryOfNonvestedAwardsDetails">
+        <link:definition>41103 - Disclosure - STOCK-BASED COMPENSATION (Summary of nonvested awards) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.whiting.com/role/DisclosureStockBasedCompensationSummaryOfStockOptionsDetails" id="DisclosureStockBasedCompensationSummaryOfStockOptionsDetails">
+        <link:definition>41104 - Disclosure - STOCK-BASED COMPENSATION (Summary of stock options) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.whiting.com/role/DisclosureIncomeTaxesNarrativeDetails" id="DisclosureIncomeTaxesNarrativeDetails">
+        <link:definition>41204 - Disclosure - INCOME TAXES (Narrative) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.whiting.com/role/DisclosureEarningsPerShareNarrativeDetails" id="DisclosureEarningsPerShareNarrativeDetails">
+        <link:definition>41302 - Disclosure - EARNINGS PER SHARE (Narrative) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.whiting.com/role/DisclosureCommitmentsAndContingenciesMinimumFuturePaymentsDetails" id="DisclosureCommitmentsAndContingenciesMinimumFuturePaymentsDetails">
+        <link:definition>41401 - Disclosure - COMMITMENTS AND CONTINGENCIES (Minimum future payments) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.whiting.com/role/DisclosureCommitmentsAndContingenciesNarrativeDetails" id="DisclosureCommitmentsAndContingenciesNarrativeDetails">
+        <link:definition>41402 - Disclosure - COMMITMENTS AND CONTINGENCIES (Narrative) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.whiting.com/role/DisclosureCommitmentsAndContingenciesOtherThanUnconditionalObligationsDetails" id="DisclosureCommitmentsAndContingenciesOtherThanUnconditionalObligationsDetails">
+        <link:definition>41403 - Disclosure - COMMITMENTS AND CONTINGENCIES (Other than unconditional obligations) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.whiting.com/role/DisclosureRestructuringDetails" id="DisclosureRestructuringDetails">
+        <link:definition>41601 - Disclosure - RESTRUCTURING (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.whiting.com/role/DisclosureSubsequentEventsDetails" id="DisclosureSubsequentEventsDetails">
+        <link:definition>41701 - Disclosure - SUBSEQUENT EVENTS (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.whiting.com/role/DocumentDocumentAndEntityInformation" id="DocumentDocumentAndEntityInformation">
+        <link:definition>00090 - Document - Document and Entity Information</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.whiting.com/role/StatementConsolidatedBalanceSheetsParenthetical" id="StatementConsolidatedBalanceSheetsParenthetical">
+        <link:definition>00105 - Statement - CONSOLIDATED BALANCE SHEETS (Parenthetical)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.whiting.com/role/StatementConsolidatedStatementsOfEquityParenthetical" id="StatementConsolidatedStatementsOfEquityParenthetical">
+        <link:definition>00405 - Statement - CONSOLIDATED STATEMENTS OF EQUITY (Parenthetical)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.whiting.com/role/DisclosureSummaryOfSignificantAccountingPolicies" id="DisclosureSummaryOfSignificantAccountingPolicies">
+        <link:definition>10101 - Disclosure - SUMMARY OF SIGNIFICANT ACCOUNTING POLICIES</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.whiting.com/role/DisclosureOilAndGasProperties" id="DisclosureOilAndGasProperties">
+        <link:definition>10201 - Disclosure - OIL AND GAS PROPERTIES</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.whiting.com/role/DisclosureAcquisitionsAndDivestitures" id="DisclosureAcquisitionsAndDivestitures">
+        <link:definition>10301 - Disclosure - ACQUISITIONS AND DIVESTITURES</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.whiting.com/role/DisclosureLeases" id="DisclosureLeases">
+        <link:definition>10401 - Disclosure - LEASES</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.whiting.com/role/DisclosureLongTermDebt" id="DisclosureLongTermDebt">
+        <link:definition>10501 - Disclosure - LONG-TERM DEBT</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.whiting.com/role/DisclosureAssetRetirementObligations" id="DisclosureAssetRetirementObligations">
+        <link:definition>10601 - Disclosure - ASSET RETIREMENT OBLIGATIONS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.whiting.com/role/DisclosureDerivativeFinancialInstruments" id="DisclosureDerivativeFinancialInstruments">
+        <link:definition>10701 - Disclosure - DERIVATIVE FINANCIAL INSTRUMENTS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.whiting.com/role/DisclosureFairValueMeasurements" id="DisclosureFairValueMeasurements">
+        <link:definition>10801 - Disclosure - FAIR VALUE MEASUREMENTS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.whiting.com/role/DisclosureShareholdersEquityAndNoncontrollingInterest" id="DisclosureShareholdersEquityAndNoncontrollingInterest">
+        <link:definition>10901 - Disclosure - SHAREHOLDERS' EQUITY AND NONCONTROLLING INTEREST</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.whiting.com/role/DisclosureRevenueRecognition" id="DisclosureRevenueRecognition">
+        <link:definition>11001 - Disclosure - REVENUE RECOGNITION</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.whiting.com/role/DisclosureStockBasedCompensation" id="DisclosureStockBasedCompensation">
+        <link:definition>11101 - Disclosure - STOCK-BASED COMPENSATION</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.whiting.com/role/DisclosureIncomeTaxes" id="DisclosureIncomeTaxes">
+        <link:definition>11201 - Disclosure - INCOME TAXES</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.whiting.com/role/DisclosureEarningsPerShare" id="DisclosureEarningsPerShare">
+        <link:definition>11301 - Disclosure - EARNINGS PER SHARE</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.whiting.com/role/DisclosureCommitmentsAndContingencies" id="DisclosureCommitmentsAndContingencies">
+        <link:definition>11401 - Disclosure - COMMITMENTS AND CONTINGENCIES</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.whiting.com/role/DisclosureCapitalizedExploratoryWellCosts" id="DisclosureCapitalizedExploratoryWellCosts">
+        <link:definition>11501 - Disclosure - CAPITALIZED EXPLORATORY WELL COSTS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.whiting.com/role/DisclosureRestructuring" id="DisclosureRestructuring">
+        <link:definition>11601 - Disclosure - RESTRUCTURING</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.whiting.com/role/DisclosureSubsequentEvents" id="DisclosureSubsequentEvents">
+        <link:definition>11701 - Disclosure - SUBSEQUENT EVENTS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.whiting.com/role/DisclosureSummaryOfSignificantAccountingPoliciesPolicies" id="DisclosureSummaryOfSignificantAccountingPoliciesPolicies">
+        <link:definition>20102 - Disclosure - SUMMARY OF SIGNIFICANT ACCOUNTING POLICIES (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.whiting.com/role/DisclosureSummaryOfSignificantAccountingPoliciesTables" id="DisclosureSummaryOfSignificantAccountingPoliciesTables">
+        <link:definition>30103 - Disclosure - SUMMARY OF SIGNIFICANT ACCOUNTING POLICIES (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.whiting.com/role/DisclosureOilAndGasPropertiesTables" id="DisclosureOilAndGasPropertiesTables">
+        <link:definition>30203 - Disclosure - OIL AND GAS PROPERTIES (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.whiting.com/role/DisclosureAcquisitionsAndDivestituresTables" id="DisclosureAcquisitionsAndDivestituresTables">
+        <link:definition>30303 - Disclosure - ACQUISITIONS AND DIVESTITURES (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.whiting.com/role/DisclosureLeasesTables" id="DisclosureLeasesTables">
+        <link:definition>30403 - Disclosure - LEASES (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.whiting.com/role/DisclosureLongTermDebtTables" id="DisclosureLongTermDebtTables">
+        <link:definition>30503 - Disclosure - LONG-TERM DEBT (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.whiting.com/role/DisclosureFairValueMeasurementsTables" id="DisclosureFairValueMeasurementsTables">
+        <link:definition>30803 - Disclosure - FAIR VALUE MEASUREMENTS (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.whiting.com/role/DisclosureShareholdersEquityAndNoncontrollingInterestTables" id="DisclosureShareholdersEquityAndNoncontrollingInterestTables">
+        <link:definition>30903 - Disclosure - SHAREHOLDERS' EQUITY AND NONCONTROLLING INTEREST (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.whiting.com/role/DisclosureRevenueRecognitionTables" id="DisclosureRevenueRecognitionTables">
+        <link:definition>31003 - Disclosure - REVENUE RECOGNITION (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.whiting.com/role/DisclosureStockBasedCompensationTables" id="DisclosureStockBasedCompensationTables">
+        <link:definition>31103 - Disclosure - STOCK-BASED COMPENSATION (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.whiting.com/role/DisclosureIncomeTaxesTables" id="DisclosureIncomeTaxesTables">
+        <link:definition>31203 - Disclosure - INCOME TAXES (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.whiting.com/role/DisclosureEarningsPerShareTables" id="DisclosureEarningsPerShareTables">
+        <link:definition>31303 - Disclosure - EARNINGS PER SHARE (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.whiting.com/role/DisclosureCommitmentsAndContingenciesTables" id="DisclosureCommitmentsAndContingenciesTables">
+        <link:definition>31403 - Disclosure - COMMITMENTS AND CONTINGENCIES (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.whiting.com/role/DisclosureCapitalizedExploratoryWellCostsTables" id="DisclosureCapitalizedExploratoryWellCostsTables">
+        <link:definition>31503 - Disclosure - CAPITALIZED EXPLORATORY WELL COSTS (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.whiting.com/role/DisclosureLeasesCashFlowDetails" id="DisclosureLeasesCashFlowDetails">
+        <link:definition>40404 - Disclosure - LEASES (Cash flow) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.whiting.com/role/DisclosureAssetRetirementObligationsDetails" id="DisclosureAssetRetirementObligationsDetails">
+        <link:definition>40601 - Disclosure - ASSET RETIREMENT OBLIGATIONS (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.whiting.com/role/DisclosureCapitalizedExploratoryWellCostsDetails" id="DisclosureCapitalizedExploratoryWellCostsDetails">
+        <link:definition>41501 - Disclosure - CAPITALIZED EXPLORATORY WELL COSTS (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:linkbaseRef xlink:type="simple" xlink:href="wll-20191231_pre.xml" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
+      <link:linkbaseRef xlink:type="simple" xlink:href="wll-20191231_cal.xml" xlink:role="http://www.xbrl.org/2003/role/calculationLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
+      <link:linkbaseRef xlink:type="simple" xlink:href="wll-20191231_def.xml" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
+      <link:linkbaseRef xlink:type="simple" xlink:href="wll-20191231_lab.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
+    </xsd:appinfo>
+  </xsd:annotation>
+  <xsd:import namespace="http://www.xbrl.org/dtr/type/numeric" schemaLocation="http://www.xbrl.org/dtr/type/numeric-2009-12-16.xsd" />
+  <xsd:import namespace="http://www.xbrl.org/dtr/type/non-numeric" schemaLocation="http://www.xbrl.org/dtr/type/nonNumeric-2009-12-16.xsd" />
+  <xsd:import namespace="http://www.xbrl.org/2009/role/negated" schemaLocation="http://www.xbrl.org/lrr/role/negated-2009-12-16.xsd" />
+  <xsd:import namespace="http://xbrl.sec.gov/dei/2019-01-31" schemaLocation="https://xbrl.sec.gov/dei/2019/dei-2019-01-31.xsd" />
+  <xsd:import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd" />
+  <xsd:import namespace="http://xbrl.org/2005/xbrldt" schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd" />
+  <import namespace="http://fasb.org/us-roles/2019-01-31" schemaLocation="http://xbrl.fasb.org/us-gaap/2019/elts/us-roles-2019-01-31.xsd" xmlns="http://www.w3.org/2001/XMLSchema" />
+  <import namespace="http://fasb.org/srt-types/2019-01-31" schemaLocation="http://xbrl.fasb.org/srt/2019/elts/srt-types-2019-01-31.xsd" xmlns="http://www.w3.org/2001/XMLSchema" />
+  <import namespace="http://fasb.org/us-gaap/2019-01-31" schemaLocation="http://xbrl.fasb.org/us-gaap/2019/elts/us-gaap-2019-01-31.xsd" xmlns="http://www.w3.org/2001/XMLSchema" />
+  <import namespace="http://fasb.org/srt/2019-01-31" schemaLocation="http://xbrl.fasb.org/srt/2019/elts/srt-2019-01-31.xsd" xmlns="http://www.w3.org/2001/XMLSchema" />
+  <xsd:element id="wll_PremiumAsPercentageOfFaceAmount" name="PremiumAsPercentageOfFaceAmount" nillable="true" type="num:percentItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" />
+  <xsd:element name="SustainableWaterResourcesLLCMember" id="wll_SustainableWaterResourcesLLCMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <xsd:element name="ExplorationExpenseAndImpairmentOfOilAndGasProperties" id="wll_ExplorationExpenseAndImpairmentOfOilAndGasProperties" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" />
+  <xsd:element id="wll_LineOfCreditPortionAvailableForLettersOfCreditMaximum" name="LineOfCreditPortionAvailableForLettersOfCreditMaximum" nillable="true" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" xbrli:balance="credit" />
+  <xsd:element id="wll_LineOfCreditFacilityRevolvingCreditRemainingToIssueLetterOfCredit" name="LineOfCreditFacilityRevolvingCreditRemainingToIssueLetterOfCredit" nillable="true" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" xbrli:balance="credit" />
+  <xsd:element id="wll_DebtCovenantConsolidatedCurrentAssetsToCurrentLiabilitiesRatioRequirementMinimum" name="DebtCovenantConsolidatedCurrentAssetsToCurrentLiabilitiesRatioRequirementMinimum" nillable="true" type="xbrli:pureItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" />
+  <xsd:element id="wll_RetainedEarningsFreeFromRestrictions" name="RetainedEarningsFreeFromRestrictions" nillable="true" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" xbrli:balance="credit" />
+  <xsd:element name="AssetRetirementObligationLiabilitiesRelatedToSoldAssets" id="wll_AssetRetirementObligationLiabilitiesRelatedToSoldAssets" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" />
+  <xsd:element name="SharesExcludedFromEarningsPerShareCalculationStockOptions" id="wll_SharesExcludedFromEarningsPerShareCalculationStockOptions" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="duration" />
+  <xsd:element name="ThreeWayCollarsMember" id="wll_ThreeWayCollarsMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <xsd:element name="SeniorNotes5PercentDueTwoThousandNineteenMember" id="wll_SeniorNotes5PercentDueTwoThousandNineteenMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <xsd:element name="SeniorNotes5.75PercentDueTwoThousandTwentyOneMember" id="wll_SeniorNotes5.75PercentDueTwoThousandTwentyOneMember" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <element id="wll_GasAndOilAreaDevelopedAndUndevelopedNet" name="GasAndOilAreaDevelopedAndUndevelopedNet" nillable="true" type="num:areaItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" xmlns="http://www.w3.org/2001/XMLSchema" />
+  <xsd:element id="wll_LineOfCreditFacilityMaximumAggregateCommitments" name="LineOfCreditFacilityMaximumAggregateCommitments" nillable="true" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" xbrli:balance="credit" />
+  <element id="wll_SeniorSubordinatedNotes6.5DueTwoThousandEighteenMember" name="SeniorSubordinatedNotes6.5DueTwoThousandEighteenMember" nillable="true" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="duration" xmlns="http://www.w3.org/2001/XMLSchema" />
+  <element id="wll_ConvertibleSeniorNotes1.25PercentDueTwoThousandTwentyMember" name="ConvertibleSeniorNotes1.25PercentDueTwoThousandTwentyMember" nillable="true" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="duration" xmlns="http://www.w3.org/2001/XMLSchema" />
+  <element id="wll_SeniorNotes6.25PercentDueTwoThousandTwentyThreeMember" name="SeniorNotes6.25PercentDueTwoThousandTwentyThreeMember" nillable="true" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="duration" xmlns="http://www.w3.org/2001/XMLSchema" />
+  <xsd:element id="wll_PossibleMultiplierOfSharesEarned" name="PossibleMultiplierOfSharesEarned" nillable="true" type="xbrli:integerItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" />
+  <element id="wll_EquityComponentOfConvertibleSeniorNoteMember" name="EquityComponentOfConvertibleSeniorNoteMember" nillable="true" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="duration" xmlns="http://www.w3.org/2001/XMLSchema" />
+  <element id="wll_DebtCovenantTotalDebtToEarningsBeforeInterestTaxesDepreciationAmortizationAndExplorationExpenseRatioRequirement" name="DebtCovenantTotalDebtToEarningsBeforeInterestTaxesDepreciationAmortizationAndExplorationExpenseRatioRequirement" nillable="true" type="xbrli:pureItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" xmlns="http://www.w3.org/2001/XMLSchema" />
+  <xsd:element id="wll_ShareBasedCompensationArrangementByShareBasedPaymentAwardMaximumNumberOfSharesPerNonEmployee" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardMaximumNumberOfSharesPerNonEmployee" nillable="true" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" />
+  <xsd:element id="wll_AdditionalProceedsFromDisposalForSpecifiedPeriodForEachCentAverageNymexFuturesIsAboveThresholdPricePerBbl" name="AdditionalProceedsFromDisposalForSpecifiedPeriodForEachCentAverageNymexFuturesIsAboveThresholdPricePerBbl" nillable="true" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" xbrli:balance="debit" />
+  <element id="wll_DisposalGroupThresholdPricePerBblForAdditionalProceedsFromSale" name="DisposalGroupThresholdPricePerBblForAdditionalProceedsFromSale" nillable="true" type="srt-types:perUnitItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" xmlns="http://www.w3.org/2001/XMLSchema" />
+  <xsd:element id="wll_OtherIncomeExpenseTotal" name="OtherIncomeExpenseTotal" nillable="true" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" xbrli:balance="credit" />
+  <element id="wll_SeniorNotes6.625PercentDueTwoThousandTwentySixMember" name="SeniorNotes6.625PercentDueTwoThousandTwentySixMember" nillable="true" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="duration" xmlns="http://www.w3.org/2001/XMLSchema" />
+  <xsd:element id="wll_TargetShareGrantedPercentToBeShareSettled" name="TargetShareGrantedPercentToBeShareSettled" nillable="true" type="num:percentItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" />
+  <xsd:element id="wll_RevenuePerformanceObligationDescriptionOfPaymentTermsPeriod" name="RevenuePerformanceObligationDescriptionOfPaymentTermsPeriod" nillable="true" type="xbrli:durationItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" />
+  <xsd:element id="wll_RevenueRecognitionTable" name="RevenueRecognitionTable" nillable="true" type="xbrli:stringItemType" substitutionGroup="xbrldt:hypercubeItem" abstract="true" xbrli:periodType="duration" />
+  <xsd:element id="wll_RevenueRecognitionLineItems" name="RevenueRecognitionLineItems" nillable="true" type="xbrli:stringItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="duration" />
+  <element id="wll_AdjustmentsToAdditionalPaidInCapitalReverseStockSplit" name="AdjustmentsToAdditionalPaidInCapitalReverseStockSplit" nillable="true" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" xbrli:balance="credit" xmlns="http://www.w3.org/2001/XMLSchema" />
+  <element id="wll_DebtDiscountAndPremiumsPolicyPolicyTextBlock" name="DebtDiscountAndPremiumsPolicyPolicyTextBlock" nillable="true" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" xmlns="http://www.w3.org/2001/XMLSchema" />
+  <element id="wll_DeferredGainOnSalesPolicyTextBlock" name="DeferredGainOnSalesPolicyTextBlock" nillable="true" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" xmlns="http://www.w3.org/2001/XMLSchema" />
+  <element id="wll_AcquisitionCostPolicyTextBlock" name="AcquisitionCostPolicyTextBlock" nillable="true" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" xmlns="http://www.w3.org/2001/XMLSchema" />
+  <element id="wll_ScheduleOfNoncontrollingInterestTableTextBlock" name="ScheduleOfNoncontrollingInterestTableTextBlock" nillable="true" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" xmlns="http://www.w3.org/2001/XMLSchema" />
+  <element id="wll_SummaryOfSignificantAccountingPoliciesTable" name="SummaryOfSignificantAccountingPoliciesTable" nillable="true" type="xbrli:stringItemType" substitutionGroup="xbrldt:hypercubeItem" abstract="true" xbrli:periodType="duration" xmlns="http://www.w3.org/2001/XMLSchema" />
+  <element id="wll_SummaryOfSignificantAccountingPoliciesLineItems" name="SummaryOfSignificantAccountingPoliciesLineItems" nillable="true" type="xbrli:stringItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="duration" xmlns="http://www.w3.org/2001/XMLSchema" />
+  <element id="wll_TradeAccountsReceivableCollectionPeriod" name="TradeAccountsReceivableCollectionPeriod" nillable="true" type="xbrli:durationItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" xmlns="http://www.w3.org/2001/XMLSchema" />
+  <element id="wll_ImpairmentOfUnprovedProperties" name="ImpairmentOfUnprovedProperties" nillable="true" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" xbrli:balance="debit" xmlns="http://www.w3.org/2001/XMLSchema" />
+  <element id="wll_JpMorganChaseMember" name="JpMorganChaseMember" nillable="true" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="duration" xmlns="http://www.w3.org/2001/XMLSchema" />
+  <element id="wll_CapitalOneN.A.Member" name="CapitalOneN.A.Member" nillable="true" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="duration" xmlns="http://www.w3.org/2001/XMLSchema" />
+  <element id="wll_CommodityPriceRiskMember" name="CommodityPriceRiskMember" nillable="true" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="duration" xmlns="http://www.w3.org/2001/XMLSchema" />
+  <element id="wll_WhitingUSATrustTwoUnitsMember" name="WhitingUSATrustTwoUnitsMember" nillable="true" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="duration" xmlns="http://www.w3.org/2001/XMLSchema" />
+  <element id="wll_SaleOfTrustUnitsToPublic" name="SaleOfTrustUnitsToPublic" nillable="true" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" xmlns="http://www.w3.org/2001/XMLSchema" />
+  <element id="wll_OutstandingDerivativeContractsAsPercentageOfCrudeOilVolumesHedged" name="OutstandingDerivativeContractsAsPercentageOfCrudeOilVolumesHedged" nillable="true" type="num:percentItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" xmlns="http://www.w3.org/2001/XMLSchema" />
+  <element id="wll_DerivativeContractNumberOfCounterparties" name="DerivativeContractNumberOfCounterparties" nillable="true" type="xbrli:integerItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" xmlns="http://www.w3.org/2001/XMLSchema" />
+  <element id="wll_TesoroCrudeOilCoMember" name="TesoroCrudeOilCoMember" nillable="true" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="duration" xmlns="http://www.w3.org/2001/XMLSchema" />
+  <element id="wll_NumberOfWellsSold" name="NumberOfWellsSold" nillable="true" type="xbrli:integerItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" xmlns="http://www.w3.org/2001/XMLSchema" />
+  <element id="wll_NonCashChargeRelatedToAccelerationOfDebtDiscountsAndUnamortizedDebtIssuanceCosts" name="NonCashChargeRelatedToAccelerationOfDebtDiscountsAndUnamortizedDebtIssuanceCosts" nillable="true" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" xbrli:balance="debit" xmlns="http://www.w3.org/2001/XMLSchema" />
+  <element id="wll_ProvedPropertiesMember" name="ProvedPropertiesMember" nillable="true" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="duration" xmlns="http://www.w3.org/2001/XMLSchema" />
+  <element id="wll_IrcSection382LimitationsMember" name="IrcSection382LimitationsMember" nillable="true" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="duration" xmlns="http://www.w3.org/2001/XMLSchema" />
+  <element id="wll_EorCreditsMember" name="EorCreditsMember" nillable="true" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="duration" xmlns="http://www.w3.org/2001/XMLSchema" />
+  <element id="wll_CanadianNolCarryforwardsMember" name="CanadianNolCarryforwardsMember" nillable="true" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="duration" xmlns="http://www.w3.org/2001/XMLSchema" />
+  <element id="wll_ShortTermCapitalLossCarryforwardsMember" name="ShortTermCapitalLossCarryforwardsMember" nillable="true" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="duration" xmlns="http://www.w3.org/2001/XMLSchema" />
+  <element id="wll_TaxCutAndJobsActOf2017IncomeTaxExpenseRevaluationOfDeferredTaxAssetsAndLiabilities" name="TaxCutAndJobsActOf2017IncomeTaxExpenseRevaluationOfDeferredTaxAssetsAndLiabilities" nillable="true" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" xbrli:balance="debit" xmlns="http://www.w3.org/2001/XMLSchema" />
+  <element id="wll_TaxCutAndJobsActOf2017IncomeTaxBenefitReductionInExistingValuationAllowances" name="TaxCutAndJobsActOf2017IncomeTaxBenefitReductionInExistingValuationAllowances" nillable="true" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" xbrli:balance="credit" xmlns="http://www.w3.org/2001/XMLSchema" />
+  <element id="wll_TaxCutAndJobsActOf2017PossibleImpactLimitationOnNetOperatingLossPercentageOfTaxableIncome" name="TaxCutAndJobsActOf2017PossibleImpactLimitationOnNetOperatingLossPercentageOfTaxableIncome" nillable="true" type="num:percentItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" xmlns="http://www.w3.org/2001/XMLSchema" />
+  <element id="wll_TaxCutAndJobsActOf2017IncomeTaxReconciliationImpairmentChargeAfterEnactmentOfFederalTaxReform" name="TaxCutAndJobsActOf2017IncomeTaxReconciliationImpairmentChargeAfterEnactmentOfFederalTaxReform" nillable="true" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" xbrli:balance="debit" xmlns="http://www.w3.org/2001/XMLSchema" />
+  <element id="wll_EffectiveIncomeTaxRateReconciliationIrcSection382Limitation" name="EffectiveIncomeTaxRateReconciliationIrcSection382Limitation" nillable="true" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" xbrli:balance="debit" xmlns="http://www.w3.org/2001/XMLSchema" />
+  <element id="wll_DeferredTaxLiabilitiesTrustDistributions" name="DeferredTaxLiabilitiesTrustDistributions" nillable="true" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" xbrli:balance="credit" xmlns="http://www.w3.org/2001/XMLSchema" />
+  <element id="wll_DeferredTaxLiabilitiesDiscountOnConvertibleSeniorNotes" name="DeferredTaxLiabilitiesDiscountOnConvertibleSeniorNotes" nillable="true" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" xbrli:balance="credit" xmlns="http://www.w3.org/2001/XMLSchema" />
+  <element id="wll_MountrailCountyNorthDakotaMember" name="MountrailCountyNorthDakotaMember" nillable="true" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="duration" xmlns="http://www.w3.org/2001/XMLSchema" />
+  <element id="wll_WeldCountyColoradoMember" name="WeldCountyColoradoMember" nillable="true" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="duration" xmlns="http://www.w3.org/2001/XMLSchema" />
+  <element id="wll_PurchaseContractsMember" name="PurchaseContractsMember" nillable="true" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="duration" xmlns="http://www.w3.org/2001/XMLSchema" />
+  <element id="wll_PipelineTransportationAgreementsMember" name="PipelineTransportationAgreementsMember" nillable="true" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="duration" xmlns="http://www.w3.org/2001/XMLSchema" />
+  <element id="wll_WaterDisposalAgreementMember" name="WaterDisposalAgreementMember" nillable="true" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="duration" xmlns="http://www.w3.org/2001/XMLSchema" />
+  <element id="wll_DeliveryCommitmentTerm" name="DeliveryCommitmentTerm" nillable="true" type="xbrli:durationItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" xmlns="http://www.w3.org/2001/XMLSchema" />
+  <element id="wll_OilAndGasDeliveryCommitmentsAndContractsContractualVolumeInNextTwelveMonths" name="OilAndGasDeliveryCommitmentsAndContractsContractualVolumeInNextTwelveMonths" nillable="true" type="num:volumeItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" xmlns="http://www.w3.org/2001/XMLSchema" />
+  <element id="wll_NonCancelableLeasesMember" name="NonCancelableLeasesMember" nillable="true" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="duration" xmlns="http://www.w3.org/2001/XMLSchema" />
+  <element id="wll_WillistonBasinMember" name="WillistonBasinMember" nillable="true" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="duration" xmlns="http://www.w3.org/2001/XMLSchema" />
+  <element id="wll_RobinsonLakeGasProcessingPlantAndBelfieldGasProcessingPlantMember" name="RobinsonLakeGasProcessingPlantAndBelfieldGasProcessingPlantMember" nillable="true" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="duration" xmlns="http://www.w3.org/2001/XMLSchema" />
+  <element id="wll_SeniorNotes5.75PercentDueTwoThousandTwentyOneAtParMember" name="SeniorNotes5.75PercentDueTwoThousandTwentyOneAtParMember" nillable="true" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="duration" xmlns="http://www.w3.org/2001/XMLSchema" />
+  <element id="wll_SeniorNotes5.75PercentDueTwoThousandTwentyOneAtPremiumMember" name="SeniorNotes5.75PercentDueTwoThousandTwentyOneAtPremiumMember" nillable="true" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="duration" xmlns="http://www.w3.org/2001/XMLSchema" />
+  <element id="wll_ScheduleOfShareBasedPaymentAwardValuationAssumptionsTableTextBlock" name="ScheduleOfShareBasedPaymentAwardValuationAssumptionsTableTextBlock" nillable="true" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" xmlns="http://www.w3.org/2001/XMLSchema" />
+  <element id="wll_BusinessCombinationRecognizedIdentifiableAssetsAcquiredAndLiabilitiesAssumedProvedOilAndGasProperties" name="BusinessCombinationRecognizedIdentifiableAssetsAcquiredAndLiabilitiesAssumedProvedOilAndGasProperties" nillable="true" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" xbrli:balance="debit" xmlns="http://www.w3.org/2001/XMLSchema" />
+  <element id="wll_BusinessCombinationRecognizedIdentifiableAssetsAcquiredAndLiabilitiesAssumedUnprovedOilAndGasProperties" name="BusinessCombinationRecognizedIdentifiableAssetsAcquiredAndLiabilitiesAssumedUnprovedOilAndGasProperties" nillable="true" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" xbrli:balance="debit" xmlns="http://www.w3.org/2001/XMLSchema" />
+  <element id="wll_BusinessCombinationRecognizedIdentifiableAssetsAcquiredAndLiabilitiesAssumedAssetRetirementObligations" name="BusinessCombinationRecognizedIdentifiableAssetsAcquiredAndLiabilitiesAssumedAssetRetirementObligations" nillable="true" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" xbrli:balance="credit" xmlns="http://www.w3.org/2001/XMLSchema" />
+  <element id="wll_RestrictedStockAndRestrictedStockUnitsMember" name="RestrictedStockAndRestrictedStockUnitsMember" nillable="true" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="duration" xmlns="http://www.w3.org/2001/XMLSchema" />
+  <element id="wll_PerformanceSharesAndPerformanceUnitsMember" name="PerformanceSharesAndPerformanceUnitsMember" nillable="true" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="duration" xmlns="http://www.w3.org/2001/XMLSchema" />
+  <element id="wll_SharesExcludedFromEarningsPerShareCalculationMarketBased" name="SharesExcludedFromEarningsPerShareCalculationMarketBased" nillable="true" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" xmlns="http://www.w3.org/2001/XMLSchema" />
+  <element id="wll_OilAndGasPropertyLeaseOperatingExpense" name="OilAndGasPropertyLeaseOperatingExpense" nillable="true" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" xbrli:balance="debit" xmlns="http://www.w3.org/2001/XMLSchema" />
+  <element id="wll_RichlandAndMckenzieCountiesMember" name="RichlandAndMckenzieCountiesMember" nillable="true" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="duration" xmlns="http://www.w3.org/2001/XMLSchema" />
+  <element id="wll_FortBertholdIndianReservationAreaMember" name="FortBertholdIndianReservationAreaMember" nillable="true" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="duration" xmlns="http://www.w3.org/2001/XMLSchema" />
+  <element id="wll_ShareBasedCompensationArrangementByShareBasedPaymentAwardFairValueAssumptionsNumberOfSimulations" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardFairValueAssumptionsNumberOfSimulations" nillable="true" type="xbrli:integerItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" xmlns="http://www.w3.org/2001/XMLSchema" />
+  <element id="wll_ServiceBasedRestrictedStockMember" name="ServiceBasedRestrictedStockMember" nillable="true" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="duration" xmlns="http://www.w3.org/2001/XMLSchema" />
+  <element id="wll_MarketBasedRestrictedStockMember" name="MarketBasedRestrictedStockMember" nillable="true" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="duration" xmlns="http://www.w3.org/2001/XMLSchema" />
+  <element id="wll_NorthWardEstesPropertiesMember" name="NorthWardEstesPropertiesMember" nillable="true" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="duration" xmlns="http://www.w3.org/2001/XMLSchema" />
+  <element id="wll_DisposalGroupIncrementalPricePerBblForAdditionalProceedsFromSale" name="DisposalGroupIncrementalPricePerBblForAdditionalProceedsFromSale" nillable="true" type="srt-types:perUnitItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" xmlns="http://www.w3.org/2001/XMLSchema" />
+  <element id="wll_PerformanceUnitsMember" name="PerformanceUnitsMember" nillable="true" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="duration" xmlns="http://www.w3.org/2001/XMLSchema" />
+  <element id="wll_SeniorSubordinatedNotesAndSeniorNotesMember" name="SeniorSubordinatedNotesAndSeniorNotesMember" nillable="true" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="duration" xmlns="http://www.w3.org/2001/XMLSchema" />
+  <element id="wll_CrudeOilSalesAndDeliveryContractMember" name="CrudeOilSalesAndDeliveryContractMember" nillable="true" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="duration" xmlns="http://www.w3.org/2001/XMLSchema" />
+  <element id="wll_UnitedEnergyTradingLlcMember" name="UnitedEnergyTradingLlcMember" nillable="true" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="duration" xmlns="http://www.w3.org/2001/XMLSchema" />
+  <element id="wll_PhilipsSixtySixCompanyMember" name="PhilipsSixtySixCompanyMember" nillable="true" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="duration" xmlns="http://www.w3.org/2001/XMLSchema" />
+  <element id="wll_AutomobileAndEquipmentLeasesMember" name="AutomobileAndEquipmentLeasesMember" nillable="true" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="duration" xmlns="http://www.w3.org/2001/XMLSchema" />
+  <element id="wll_DeficiencyPaymentToSuppliers" name="DeficiencyPaymentToSuppliers" nillable="true" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" xbrli:balance="credit" xmlns="http://www.w3.org/2001/XMLSchema" />
+  <element id="wll_OilAndGasAccruedLeaseOperatingExpensesCurrent" name="OilAndGasAccruedLeaseOperatingExpensesCurrent" nillable="true" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" xbrli:balance="credit" xmlns="http://www.w3.org/2001/XMLSchema" />
+  <element id="wll_DefinedContributionPlanEmployersMatchingContributionVestingPeriod" name="DefinedContributionPlanEmployersMatchingContributionVestingPeriod" nillable="true" type="xbrli:durationItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" xmlns="http://www.w3.org/2001/XMLSchema" />
+  <element id="wll_DerivativeAssetsMember" name="DerivativeAssetsMember" nillable="true" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="duration" xmlns="http://www.w3.org/2001/XMLSchema" />
+  <element id="wll_NumberOfContracts" name="NumberOfContracts" nillable="true" type="xbrli:integerItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" xmlns="http://www.w3.org/2001/XMLSchema" />
+  <element id="wll_ValuationAllowanceOtherMember" name="ValuationAllowanceOtherMember" nillable="true" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="duration" xmlns="http://www.w3.org/2001/XMLSchema" />
+  <element id="wll_LeaseDisclosureTextBlock" name="LeaseDisclosureTextBlock" nillable="true" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" xmlns="http://www.w3.org/2001/XMLSchema" />
+  <element id="wll_LeaseBalanceSheetDisclosureTableTextBlock" name="LeaseBalanceSheetDisclosureTableTextBlock" nillable="true" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" xmlns="http://www.w3.org/2001/XMLSchema" />
+  <element id="wll_LeaseCashFlowDisclosureTableTextBlock" name="LeaseCashFlowDisclosureTableTextBlock" nillable="true" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" xmlns="http://www.w3.org/2001/XMLSchema" />
+  <element id="wll_FinanceLeaseCost" name="FinanceLeaseCost" nillable="true" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" xbrli:balance="debit" xmlns="http://www.w3.org/2001/XMLSchema" />
+  <element id="wll_LesseeOperatingLeaseLeaseNotYetCommencedAmount" name="LesseeOperatingLeaseLeaseNotYetCommencedAmount" nillable="true" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" xbrli:balance="credit" xmlns="http://www.w3.org/2001/XMLSchema" />
+  <element id="wll_LesseeLeaseTermOfContract" name="LesseeLeaseTermOfContract" nillable="true" type="xbrli:durationItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" xmlns="http://www.w3.org/2001/XMLSchema" />
+  <element id="wll_BusinessCombinationRecognizedIdentifiableAssetsAcquiredAndLiabilitiesAssumedProvedOilAndGasPropertiesAbstract" name="BusinessCombinationRecognizedIdentifiableAssetsAcquiredAndLiabilitiesAssumedProvedOilAndGasPropertiesAbstract" nillable="true" type="xbrli:stringItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="duration" xmlns="http://www.w3.org/2001/XMLSchema" />
+  <element id="wll_BusinessCombinationRecognizedIdentifiableAssetsAcquiredAndLiabilitiesAssumedCurrentLiabilitiesAccruedRoyalties" name="BusinessCombinationRecognizedIdentifiableAssetsAcquiredAndLiabilitiesAssumedCurrentLiabilitiesAccruedRoyalties" nillable="true" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" xbrli:balance="credit" xmlns="http://www.w3.org/2001/XMLSchema" />
+  <element id="wll_OperatingLeaseRightOfUseAssetAccumulatedDepreciation" name="OperatingLeaseRightOfUseAssetAccumulatedDepreciation" nillable="true" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" xbrli:balance="credit" xmlns="http://www.w3.org/2001/XMLSchema" />
+  <element id="wll_FinanceLeaseRightOfUseAssetAccumulatedDepreciation" name="FinanceLeaseRightOfUseAssetAccumulatedDepreciation" nillable="true" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" xbrli:balance="credit" xmlns="http://www.w3.org/2001/XMLSchema" />
+  <element id="wll_LeaseRightOfUseAsset" name="LeaseRightOfUseAsset" nillable="true" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" xbrli:balance="debit" xmlns="http://www.w3.org/2001/XMLSchema" />
+  <element id="wll_LeaseLiability" name="LeaseLiability" nillable="true" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" xbrli:balance="credit" xmlns="http://www.w3.org/2001/XMLSchema" />
+  <element id="wll_OperatingLeaseRightOfUseAssetGross" name="OperatingLeaseRightOfUseAssetGross" nillable="true" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" xbrli:balance="debit" xmlns="http://www.w3.org/2001/XMLSchema" />
+  <element id="wll_SeniorNotesAggregateMember" name="SeniorNotesAggregateMember" nillable="true" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="duration" xmlns="http://www.w3.org/2001/XMLSchema" />
+  <element id="wll_FinanceLeaseRightOfUseAssetGross" name="FinanceLeaseRightOfUseAssetGross" nillable="true" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" xbrli:balance="debit" xmlns="http://www.w3.org/2001/XMLSchema" />
+  <element id="wll_ShareBasedAwardNonOptionMember" name="ShareBasedAwardNonOptionMember" nillable="true" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="duration" xmlns="http://www.w3.org/2001/XMLSchema" />
+  <element id="wll_MckenzieMountrailAndWilliamsCountiesMember" name="MckenzieMountrailAndWilliamsCountiesMember" nillable="true" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="duration" xmlns="http://www.w3.org/2001/XMLSchema" />
+  <element id="wll_RichlandCountyMontanaAndMountrailAndWilliamsCountiesMember" name="RichlandCountyMontanaAndMountrailAndWilliamsCountiesMember" nillable="true" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="duration" xmlns="http://www.w3.org/2001/XMLSchema" />
+  <element id="wll_DerivativeWeightedAveragePremium" name="DerivativeWeightedAveragePremium" nillable="true" type="srt-types:perUnitItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" xmlns="http://www.w3.org/2001/XMLSchema" />
+  <element id="wll_DerivativeSubFloorPrice" name="DerivativeSubFloorPrice" nillable="true" type="srt-types:perUnitItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" xmlns="http://www.w3.org/2001/XMLSchema" />
+  <element id="wll_DerivativeMaturitiesFor2020Member" name="DerivativeMaturitiesFor2020Member" nillable="true" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="duration" xmlns="http://www.w3.org/2001/XMLSchema" />
+  <element id="wll_DerivativeMaturitiesFor2021Member" name="DerivativeMaturitiesFor2021Member" nillable="true" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="duration" xmlns="http://www.w3.org/2001/XMLSchema" />
+  <element id="wll_TwoWayCollarsMember" name="TwoWayCollarsMember" nillable="true" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="duration" xmlns="http://www.w3.org/2001/XMLSchema" />
+  <element id="wll_BankOfNovaScotiaMember" name="BankOfNovaScotiaMember" nillable="true" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="duration" xmlns="http://www.w3.org/2001/XMLSchema" />
+  <element id="wll_MerrillLynchCommoditiesInc.Member" name="MerrillLynchCommoditiesInc.Member" nillable="true" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="duration" xmlns="http://www.w3.org/2001/XMLSchema" />
+  <element id="wll_CitibankN.a.Member" name="CitibankN.a.Member" nillable="true" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="duration" xmlns="http://www.w3.org/2001/XMLSchema" />
+  <element id="wll_DebtInstrumentCrossDefaultProvisionThresholdAggregatePrincipalAmount" name="DebtInstrumentCrossDefaultProvisionThresholdAggregatePrincipalAmount" nillable="true" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" xbrli:balance="credit" xmlns="http://www.w3.org/2001/XMLSchema" />
+  <element id="wll_SeniorNotes2021Member" name="SeniorNotes2021Member" nillable="true" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="duration" xmlns="http://www.w3.org/2001/XMLSchema" />
+  <element id="wll_SeniorNotesAndSeniorConvertibleNotesMember" name="SeniorNotesAndSeniorConvertibleNotesMember" nillable="true" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="duration" xmlns="http://www.w3.org/2001/XMLSchema" />
+  <element id="wll_IncomeTaxRateReconciliationOutsideBasisDifferenceRecognitionAmount" name="IncomeTaxRateReconciliationOutsideBasisDifferenceRecognitionAmount" nillable="true" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" xbrli:balance="debit" xmlns="http://www.w3.org/2001/XMLSchema" />
+  <element id="wll_DeferredTaxLiabilitiesForeignOutsideBasisDifference" name="DeferredTaxLiabilitiesForeignOutsideBasisDifference" nillable="true" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" xbrli:balance="credit" xmlns="http://www.w3.org/2001/XMLSchema" />
+  <element id="wll_CreditAgreementMaturingApril122023Member" name="CreditAgreementMaturingApril122023Member" nillable="true" type="nonnum:domainItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="duration" xmlns="http://www.w3.org/2001/XMLSchema" />
+  <element id="wll_DeferredTaxAssetsLeaseObligation" name="DeferredTaxAssetsLeaseObligation" nillable="true" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" xbrli:balance="debit" xmlns="http://www.w3.org/2001/XMLSchema" />
+  <element id="wll_ThresholdAllowingAcquisitionOrRetirementSeniorNotesAmount" name="ThresholdAllowingAcquisitionOrRetirementSeniorNotesAmount" nillable="true" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" xbrli:balance="credit" xmlns="http://www.w3.org/2001/XMLSchema" />
+  <element id="wll_ThresholdAllowingAcquisitionOrRetirementSeniorNotesPercent" name="ThresholdAllowingAcquisitionOrRetirementSeniorNotesPercent" nillable="true" type="num:percentItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" xmlns="http://www.w3.org/2001/XMLSchema" />
+</xsd:schema>
